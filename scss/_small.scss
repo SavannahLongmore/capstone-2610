@@ -1,0 +1,375 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif, $defaultFont;
+  background-color: $bg-light;
+  color: $navy;
+  line-height: 1.4;
+}
+
+/* =========================
+   Images
+   ========================= */
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* =========================
+   Wrapper
+   ========================= */
+#wrapper {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: $bg-light;
+}
+
+/* =========================
+   Header
+   ========================= */
+header {
+  background-color: $bg-light;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.header-top {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo {
+  grid-column: 2; // 👈 puts it in the center column
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo img {
+  width: 90px;
+  height: auto;
+  display: block;
+}
+
+.logo h1 {
+  margin: 0;
+  font-family: "Asap Condensed", sans-serif;
+  font-size: 2.7rem;
+  font-weight: 500;
+  color: #c24872;
+  line-height: 1;
+  transform: translateY(2px);
+}
+
+#navButton {
+  position: relative;
+  grid-column: 3;
+  justify-self: end;
+
+  background: transparent;
+  border: 0;
+  color: #13145c;
+  font-size: 2.5rem;
+  cursor: pointer;
+  z-index: 30;
+}
+
+/* =========================
+   Mobile Navigation
+   ========================= */
+#primaryNav {
+  display: none;
+  width: 100%;
+  background: #efefef;
+}
+
+#primaryNav.show {
+  display: block;
+}
+
+#primaryNav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#primaryNav li {
+  border-bottom: 1px solid #d0d0d0;
+}
+
+#primaryNav li:first-child {
+  border-top: 0;
+}
+
+#primaryNav a {
+  display: block;
+  padding: 1.25rem 0.9rem;
+  text-align: right;
+  text-decoration: none;
+  font-family: "Asap Condensed", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #13145c;
+  background: #efefef;
+}
+
+#primaryNav a:hover {
+  background: #e8e8e8;
+}
+
+#primaryNav a.active {
+  color: #c24872;
+}
+
+/* =========================
+   Hero / About Section
+   ========================= */
+#about {
+  text-align: center;
+  padding: 0.5rem 0 1rem;
+  font-size: 3rem;
+  
+}
+
+#about h2 {
+  font-size: 7rem;
+  color: $navy;
+  margin-top: 0.25rem;
+  line-height: 1;
+  font-weight: 500;
+    font-family: $defaultFont;
+}
+
+#about .tagline {
+  color: $magenta;
+  font-size: 2rem;
+  margin-top: 0.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-image {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-image video {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-text-box {
+  position: absolute;
+  top: 40px;
+  bottom: 40px;
+  right: 40px;
+  width: 30%;
+  letter-spacing: 0.2px;
+  background: rgba(255, 255, 255, 0.60); // 👈 frosted look
+  padding: 0.6rem 0.7rem;
+  border-radius: 8px;
+
+  color: #1f205f; // navy-ish like your design
+}
+
+.hero-text-box p {
+  font-size: .9rem;
+  line-height: 1.2;
+  font-weight: 600;
+  text-align: left;
+}
+
+/* red underline */
+.hero-text-box .underline {
+  width: 75%;
+  height: 8px;
+  background-color: #e04b4b;
+  margin-top: 1.2rem;
+  border-radius: 10px;
+}
+
+/* =========================
+   Main Content
+   ========================= */
+main {
+  padding: 0 3rem;
+}
+
+main h2.section-title {
+  padding: 2rem;
+  text-align: center;
+  font-size: 4.5rem;
+  font-weight: 500;
+  color: $navy;
+  margin: 1rem 0 0.8rem;
+  line-height: 1.05;
+  font-family: $defaultFont;
+}
+
+/* =========================
+   Service Cards
+   ========================= */
+.cards {
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.card {
+  background-color: $bg-light;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: $shadow;
+  margin: .5rem;
+}
+
+.card h3 {
+  background-color: $magenta;
+  color: $white;
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 0.7rem 0.5rem;
+  font-weight: 700;
+  padding-top: 30px;
+}
+
+.card h3::first-letter {
+  font-size: 2rem;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card ul {
+  list-style: disc;
+  padding: 1rem 1.75rem 1.25rem 2.2rem;
+  color: $text-gray;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+.card li {
+  margin-bottom: 0.25rem;
+
+  &::marker {
+    color: $magenta;
+  }
+}
+
+/* =========================
+   Clients Section
+   ========================= */
+#clients {
+  padding: 1.5rem 0.75rem 1rem;
+  text-align: center;
+}
+
+#clients h2 {
+  padding: 2rem;
+  text-align: center;
+  font-size: 4.5rem;
+  font-weight: 500;
+  color: $navy;
+  margin: 1rem 0 0.8rem;
+  line-height: 1.05;
+  font-family: $defaultFont;
+  margin-bottom: 3rem;
+}
+
+.client-logos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem 1.5rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.client-logos img {
+  max-width: 120px;
+  max-height: 45px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.7;
+}
+
+/* =========================
+   Footer
+   ========================= */
+
+footer {
+  background-color: #000;
+  color: #d4d4d4; // 👈 softer gray like the reference
+  padding: 0;
+  margin-top: 7rem;
+}
+
+/* Phone */
+footer .phone {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #fff;
+  padding: 1.5rem 0 1.25rem;
+}
+
+/* Locations wrapper */
+.footer-locations {
+  padding: 0 0.35rem 1rem;
+}
+
+/* Each location block */
+.location {
+  padding: 0 0 1.1rem 0.15rem;
+}
+
+footer .location h3 {
+  font-family: $defaultFont;
+  font-size: 2rem;
+  color: #bfbfbfd4;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  opacity: 0.9;
+}
+
+footer .location p {
+  font-size: 1.5rem;
+  font-family: $defaultFont;
+  font-weight: 400;
+  margin-left: 0.75rem;
+  color: #bfbfbfef;
+}
+
+/* Divider */
+footer .copyright {
+  border-top: 1px dotted rgba(255, 255, 255, 0.25);
+  text-align: center;
+  padding: 1.25rem 0;
+  font-size: 0.95rem;
+  color: #bfbfbf;
+}

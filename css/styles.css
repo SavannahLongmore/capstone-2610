@@ -1,0 +1,1029 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif, "Asap Condensed", sans-serif;
+  background-color: #efefef;
+  color: #1f205f;
+  line-height: 1.4;
+}
+
+/* =========================
+   Images
+   ========================= */
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* =========================
+   Wrapper
+   ========================= */
+#wrapper {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #efefef;
+}
+
+/* =========================
+   Header
+   ========================= */
+header {
+  background-color: #efefef;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.header-top {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo {
+  grid-column: 2;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo img {
+  width: 90px;
+  height: auto;
+  display: block;
+}
+
+.logo h1 {
+  margin: 0;
+  font-family: "Asap Condensed", sans-serif;
+  font-size: 2.7rem;
+  font-weight: 500;
+  color: #c24872;
+  line-height: 1;
+  transform: translateY(2px);
+}
+
+#navButton {
+  position: relative;
+  grid-column: 3;
+  justify-self: end;
+  background: transparent;
+  border: 0;
+  color: #13145c;
+  font-size: 2.5rem;
+  cursor: pointer;
+  z-index: 30;
+}
+
+/* =========================
+   Mobile Navigation
+   ========================= */
+#primaryNav {
+  display: none;
+  width: 100%;
+  background: #efefef;
+}
+
+#primaryNav.show {
+  display: block;
+}
+
+#primaryNav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#primaryNav li {
+  border-bottom: 1px solid #d0d0d0;
+}
+
+#primaryNav li:first-child {
+  border-top: 0;
+}
+
+#primaryNav a {
+  display: block;
+  padding: 1.25rem 0.9rem;
+  text-align: right;
+  text-decoration: none;
+  font-family: "Asap Condensed", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #13145c;
+  background: #efefef;
+}
+
+#primaryNav a:hover {
+  background: #e8e8e8;
+}
+
+#primaryNav a.active {
+  color: #c24872;
+}
+
+/* =========================
+   Hero / About Section
+   ========================= */
+#about {
+  text-align: center;
+  padding: 0.5rem 0 1rem;
+  font-size: 3rem;
+}
+
+#about h2 {
+  font-size: 7rem;
+  color: #1f205f;
+  margin-top: 0.25rem;
+  line-height: 1;
+  font-weight: 500;
+  font-family: "Asap Condensed", sans-serif;
+}
+
+#about .tagline {
+  color: #c24872;
+  font-size: 2rem;
+  margin-top: 0.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-image {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-image video {
+  width: 100%;
+  height: auto;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-text-box {
+  position: absolute;
+  top: 40px;
+  bottom: 40px;
+  right: 40px;
+  width: 30%;
+  letter-spacing: 0.2px;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 0.6rem 0.7rem;
+  border-radius: 8px;
+  color: #1f205f;
+}
+
+.hero-text-box p {
+  font-size: 0.9rem;
+  line-height: 1.2;
+  font-weight: 600;
+  text-align: left;
+}
+
+/* red underline */
+.hero-text-box .underline {
+  width: 75%;
+  height: 8px;
+  background-color: #e04b4b;
+  margin-top: 1.2rem;
+  border-radius: 10px;
+}
+
+/* =========================
+   Main Content
+   ========================= */
+main {
+  padding: 0 3rem;
+}
+
+main h2.section-title {
+  padding: 2rem;
+  text-align: center;
+  font-size: 4.5rem;
+  font-weight: 500;
+  color: #1f205f;
+  margin: 1rem 0 0.8rem;
+  line-height: 1.05;
+  font-family: "Asap Condensed", sans-serif;
+}
+
+/* =========================
+   Service Cards
+   ========================= */
+.cards {
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.card {
+  background-color: #efefef;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+  margin: 0.5rem;
+}
+
+.card h3 {
+  background-color: #c24872;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 0.7rem 0.5rem;
+  font-weight: 700;
+  padding-top: 30px;
+}
+
+.card h3::first-letter {
+  font-size: 2rem;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card ul {
+  list-style: disc;
+  padding: 1rem 1.75rem 1.25rem 2.2rem;
+  color: #7b7b7b;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+.card li {
+  margin-bottom: 0.25rem;
+}
+.card li::marker {
+  color: #c24872;
+}
+
+/* =========================
+   Clients Section
+   ========================= */
+#clients {
+  padding: 1.5rem 0.75rem 1rem;
+  text-align: center;
+}
+
+#clients h2 {
+  padding: 2rem;
+  text-align: center;
+  font-size: 4.5rem;
+  font-weight: 500;
+  color: #1f205f;
+  margin: 1rem 0 0.8rem;
+  line-height: 1.05;
+  font-family: "Asap Condensed", sans-serif;
+  margin-bottom: 3rem;
+}
+
+.client-logos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem 1.5rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.client-logos img {
+  max-width: 120px;
+  max-height: 45px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.7;
+}
+
+/* =========================
+   Footer
+   ========================= */
+footer {
+  background-color: #000;
+  color: #d4d4d4;
+  padding: 0;
+  margin-top: 7rem;
+}
+
+/* Phone */
+footer .phone {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #fff;
+  padding: 1.5rem 0 1.25rem;
+}
+
+/* Locations wrapper */
+.footer-locations {
+  padding: 0 0.35rem 1rem;
+}
+
+/* Each location block */
+.location {
+  padding: 0 0 1.1rem 0.15rem;
+}
+
+footer .location h3 {
+  font-family: "Asap Condensed", sans-serif;
+  font-size: 2rem;
+  color: rgba(191, 191, 191, 0.831372549);
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  opacity: 0.9;
+}
+
+footer .location p {
+  font-size: 1.5rem;
+  font-family: "Asap Condensed", sans-serif;
+  font-weight: 400;
+  margin-left: 0.75rem;
+  color: rgba(191, 191, 191, 0.937254902);
+}
+
+/* Divider */
+footer .copyright {
+  border-top: 1px dotted rgba(255, 255, 255, 0.25);
+  text-align: center;
+  padding: 1.25rem 0;
+  font-size: 0.95rem;
+  color: #bfbfbf;
+}
+
+@media only screen and (min-width: 48rem) {
+  #wrapper {
+    max-width: 100%;
+  }
+  .page-shell {
+    width: min(100% - 2rem, 950px);
+    margin-inline: auto;
+  }
+  .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem 1.25rem 0.75rem;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    grid-column: auto;
+    justify-self: flex-start;
+  }
+  .logo img {
+    width: 64px;
+  }
+  .logo h1 {
+    font-size: 2.5rem;
+  }
+  #navButton {
+    font-size: 2.1rem;
+    margin-left: auto;
+  }
+  #primaryNav {
+    display: none;
+    width: 230px;
+    position: absolute;
+    right: 1rem;
+    top: 5rem;
+    z-index: 40;
+    background: #efefef;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.14);
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+  }
+  #primaryNav.show {
+    display: block;
+  }
+  #primaryNav a {
+    font-size: 1.15rem;
+    padding: 1rem;
+  }
+  #about {
+    padding: 0.25rem 0 1.25rem;
+  }
+  #about h2 {
+    font-size: 4.8rem;
+  }
+  #about .tagline {
+    font-size: 1.55rem;
+    margin-bottom: 1.4rem;
+  }
+  .hero-image {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .hero-image video,
+  .hero-image img {
+    height: 320px;
+  }
+  .hero-text-box {
+    top: 1.25rem;
+    bottom: 1.25rem;
+    left: 1rem;
+    width: 135px;
+    padding: 0.75rem 0.7rem;
+  }
+  .hero-text-box p {
+    font-size: 1.1rem;
+  }
+  main h2.section-title,
+  #clients h2 {
+    font-size: 3rem;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(260px, 1fr));
+    gap: 1.4rem;
+    align-items: start;
+  }
+  .card {
+    width: 100%;
+    max-width: none;
+  }
+  .card h3 {
+    font-size: 1.3rem;
+  }
+  .card img {
+    width: 100%;
+    height: 230px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: block;
+  }
+  .card ul {
+    font-size: 1rem;
+  }
+  .client-logos {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.75rem 2rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .client-logos img {
+    max-width: 110px;
+    max-height: 40px;
+  }
+  .client-logos img:nth-child(5) {
+    grid-column: 2;
+  }
+  .client-logos img:nth-child(6) {
+    grid-column: 3;
+  }
+  footer .phone {
+    font-size: 2.7rem;
+  }
+  .footer-locations {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 2.5rem;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0 1rem 2rem;
+  }
+  .location {
+    padding: 0;
+  }
+  .location:nth-child(3) {
+    grid-column: 1/3;
+    justify-self: center;
+    width: 240px;
+  }
+  footer .location h3 {
+    font-size: 1.65rem;
+  }
+  footer .location p {
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (min-width: 75rem) {
+  #wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  header {
+    padding: 1.4rem 1.5rem 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+  }
+  .logo img {
+    width: 70px;
+  }
+  .logo h1 {
+    font-size: 2.5rem;
+  }
+  #navButton {
+    display: none;
+  }
+  .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem 0.5rem;
+    width: 100%;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 0;
+  }
+  #navButton {
+    display: none;
+  }
+  #primaryNav {
+    display: block !important;
+    position: static;
+    width: auto;
+    margin-left: auto;
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    overflow: visible;
+  }
+  #primaryNav ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  #primaryNav li {
+    border: none;
+  }
+  #primaryNav a {
+    display: block;
+    padding: 0;
+    background: transparent;
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-align: left;
+  }
+  #primaryNav a:hover {
+    background: transparent;
+    color: #c24872;
+  }
+  #about {
+    padding: 0.5rem 1rem 1.75rem;
+  }
+  #about h2 {
+    font-size: 5.8rem;
+    margin-top: 0;
+  }
+  #about .tagline {
+    font-size: 1.9rem;
+    margin-top: 0.35rem;
+    margin-bottom: 1.3rem;
+  }
+  .hero-image {
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+  }
+  .hero-image video,
+  .hero-image img {
+    width: 100%;
+    height: 420px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .hero-text-box {
+    top: auto;
+    left: 1.25rem;
+    right: 1.25rem;
+    bottom: 1rem;
+    width: auto;
+    padding: 1rem 1.15rem 0.75rem;
+    border-radius: 12px;
+  }
+  .hero-text-box p {
+    font-size: 1.7rem;
+    line-height: 1.08;
+  }
+  .hero-text-box .underline {
+    width: 72%;
+    height: 5px;
+    margin-top: 0.75rem;
+  }
+  main {
+    padding: 0 1.5rem;
+  }
+  main h2.section-title {
+    font-size: 3.5rem;
+    padding: 0;
+    margin: 1.6rem 0 1.7rem;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(240px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: center;
+    align-items: start;
+  }
+  .card {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+  }
+  .card h3 {
+    font-size: 1.2rem;
+    padding: 0.85rem 0.4rem;
+  }
+  .card img {
+    width: 100%;
+    height: 170px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: block;
+  }
+  .card ul {
+    font-size: 0.95rem;
+    padding: 1rem 1rem 1.1rem 1.4rem;
+  }
+  #clients {
+    padding: 3.2rem 1.5rem 1.8rem;
+  }
+  #clients h2 {
+    font-size: 3.4rem;
+    margin-bottom: 2rem;
+  }
+  .client-logos {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .client-logos img {
+    max-width: 120px;
+    max-height: 42px;
+  }
+  .client-logos img:nth-child(5),
+  .client-logos img:nth-child(6) {
+    grid-column: auto;
+  }
+  footer {
+    margin-top: 3rem;
+  }
+  footer .phone {
+    font-size: 3.2rem;
+    padding: 1.5rem 0 2rem;
+  }
+  .footer-locations {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0 1.5rem 2rem;
+  }
+  .location:nth-child(3) {
+    grid-column: auto;
+    justify-self: stretch;
+    width: auto;
+  }
+  footer .location h3 {
+    font-size: 1.7rem;
+  }
+  footer .location p {
+    font-size: 1.15rem;
+    line-height: 1.5;
+  }
+  footer .copyright {
+    font-size: 1rem;
+    padding: 1.3rem 0 1.6rem;
+  }
+}

@@ -1,0 +1,177 @@
+#wrapper {
+  max-width: 100%;
+}
+
+.page-shell {
+  width: min(100% - 2rem, 950px);
+  margin-inline: auto;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem 1.25rem 0.75rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  grid-column: auto;      // overrides small
+  justify-self: flex-start; // overrides small
+}
+
+.logo img {
+  width: 64px;
+}
+
+.logo h1 {
+  font-size: 2.5rem;
+}
+
+#navButton {
+  font-size: 2.1rem;
+  margin-left: auto;
+}
+
+#primaryNav {
+  display: none;
+  width: 230px;
+  position: absolute;
+  right: 1rem;
+  top: 5rem;
+  z-index: 40;
+  background: #efefef;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.14);
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
+}
+
+#primaryNav.show {
+  display: block;
+}
+
+#primaryNav a {
+  font-size: 1.15rem;
+  padding: 1rem;
+}
+
+#about {
+  padding: 0.25rem 0 1.25rem;
+}
+
+#about h2 {
+  font-size: 4.8rem;
+}
+
+#about .tagline {
+  font-size: 1.55rem;
+  margin-bottom: 1.4rem;
+}
+
+.hero-image {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero-image video,
+.hero-image img {
+  height: 320px;
+}
+
+.hero-text-box {
+  top: 1.25rem;
+  bottom: 1.25rem;
+  left: 1rem;
+  width: 135px;
+  padding: 0.75rem 0.7rem;
+}
+
+.hero-text-box p {
+  font-size: 1.1rem;
+}
+
+main h2.section-title,
+#clients h2 {
+  font-size: 3rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(260px, 1fr));
+  gap: 1.4rem;
+  align-items: start;
+}
+
+.card {
+  width: 100%;
+  max-width: none;
+}
+
+.card h3 {
+  font-size: 1.3rem;
+}
+
+.card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+}
+
+.card ul {
+  font-size: 1rem;
+}
+
+.client-logos {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.75rem 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.client-logos img {
+  max-width: 110px;
+  max-height: 40px;
+}
+
+.client-logos img:nth-child(5) {
+  grid-column: 2;
+}
+
+.client-logos img:nth-child(6) {
+  grid-column: 3;
+}
+
+footer .phone {
+  font-size: 2.7rem;
+}
+
+.footer-locations {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem 2.5rem;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 0 1rem 2rem;
+}
+
+.location {
+  padding: 0;
+}
+
+.location:nth-child(3) {
+  grid-column: 1 / 3;
+  justify-self: center;
+  width: 240px;
+}
+
+footer .location h3 {
+  font-size: 1.65rem;
+}
+
+footer .location p {
+  font-size: 1.1rem;
+}
